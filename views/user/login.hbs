@@ -1,0 +1,24 @@
+ <section>
+<div id="login-bg" class="login-bg">
+
+    
+    
+ <form action="/Login" class="login-form" method="POST">
+ <h2 class=" login-text">Login</h2>
+    {{#if loginErr}}
+    <h3 class="loginErr">{{this.loginErr}}</h3>
+    {{/if}}
+     <div class="text-box">
+      <input type="text" id="login"class="login-name"  name="Email" placeholder="email">
+      </div>
+      <div class="text-box">
+      <input type="password" class="login-password"  name="Password" placeholder="password">
+      </div>
+
+      <a href="/signup">Create new Accout</a> 
+      <button type="submit" class="btn btn-primary login-btn ">login</button>
+    
+</form>
+
+</div>
+</section>
